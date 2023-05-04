@@ -1,0 +1,308 @@
+/*
+  Загружаем шрифт Roboto
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bitter");
+@import url("https://fonts.googleapis.com/css?family=Amatic SC");
+@font-face {
+    font-family: Lemon; /* имя шрифта */
+    src: url("fonts/Lemon.otf"); /* путь к файлу шрифта */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+
+
+:root {
+  --text-color: #f0f0f0;
+  --gray-color: rgba(240, 240, 240, 0.6);
+  --background-color: #101010;
+
+}
+
+html {
+  cursor: url("img/cat_default.png") 10 15, auto;
+}
+
+body {
+  padding: 10vw 3.333vw;
+  padding-bottom: 13.333vw;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.1vw;
+  background-color: var(--background-color);
+  color: white;
+}
+
+.theme-dark {
+ background-color: var(--background-color);
+  color: var(--text-color);
+}
+.theme-dark {
+ background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.theme-light {
+  background: #ffe0e6;
+  color:#101010; 
+}
+.theme-light a {
+  color:  #101010;
+}
+.theme-light a:hover {
+  color: #ff5072;
+} 
+.theme-light .block-title{
+  color: #ff5072;
+} 
+.theme-light button {
+  background-image: url("img/moon.png");
+  } 
+
+
+.theme-light p:hover {
+  color: #ff5072;
+}
+.theme-light .name h1 {
+    color: black;
+}
+.theme-light .name h1 span {
+    color: #3ec2ff;
+}
+
+.theme-light .my-photo {
+    filter: grayscale(0.3) sepia(0.5) hue-rotate(-10deg) saturate(2) brightness(120%) drop-shadow(5px -4px 10px  #ee899d);
+}
+
+.block-title {
+  color: rgba(240, 240, 240, 0.6);
+  line-height: 5.208vw;
+  font-size: 4.444vw;
+  margin-bottom: 3.333vw;
+  text-decoration: underline wavy;
+  text-underline-offset: 1vw;
+  text-decoration-thickness: 0.3vw;
+}
+
+.block {
+  margin-top: 13.333vw;
+
+}
+
+.entry {
+  line-height: 7.814vw;
+  font-size: 6.667vw;
+  margin-bottom: 1.667vw;
+
+}
+
+.link {
+  max-width: 13vw;
+  font-size: 6.667vw;
+  margin-bottom: 1.667vw;
+}
+.link-image {
+  cursor: url("img/cat_link.png") 10 15, auto;
+  position: fixed;
+  bottom: -130%;
+  left: 70%;
+  transform: translateX(-50%);
+  transition: 2s;
+}
+
+
+.link:hover + .link-image {
+  bottom: -10%;
+  transition: 2s;
+}
+
+.my-photo {
+    width: 38vw;
+    height: 52vw;
+    filter: grayscale(1) sepia(0.5) drop-shadow(5px -4px 10px  #0d3040);
+}
+
+
+.help-button {
+  position: fixed;
+  right: 10vw;
+  top: 2vw;
+  margin-left: 10px;
+  font-family: "Amatic SC";
+  font-size: 1.93vw;
+  text-transform: lowercase; 
+  text-decoration: underline wavy;
+  text-underline-offset: 1vw;
+  text-decoration-thickness: 0.2vw;
+}
+
+
+h1 {
+    font-family: "Bitter";
+    font-size: 10.778vw;
+    font-weight: bolder;
+    color: #3ec2ff;
+    margin-top: 1vw;
+    margin-bottom: 13vw;
+    animation-name: slide-in-left;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+
+h1 span {
+    display: block;
+    font-family: Lemon;
+    font-size: 10.778vw;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
+    margin-top: -6vw;
+    margin-left: -5px;
+    animation-name: slide-in-left;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+
+h2 { 
+    display: block;
+    font-size: 4.778vw;
+    font-weight: 400;
+    margin-top: -10vw;
+    text-transform: lowercase;
+    animation-name: slide-in-left;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+  }
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: url("img/cat_link.png") 10 15, auto;
+}
+
+a:hover {
+  color: var(--gray-color);
+}
+
+
+
+button {
+  cursor: url("img/cat_link.png") 0 0, auto; 
+  position: fixed;
+  top: 1.5vw;
+  right: 5vw;
+  z-index: 999;
+  background: url("img/sun.png");
+  background-color: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border: none;
+  width: 3vw;
+  height: 3vw;
+   -webkit-transition-duration: 1.2s; 
+    transition-duration: 1.2s;
+}
+
+
+button:hover { 
+    transform: scale(1.2);
+}
+ 
+
+
+/* 
+Медиа query для планшетов, срабатывает, когда минимальный размер окна достигает 1024px
+*/
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 4.883vw;
+    padding-bottom: 9.375vw;
+  }
+
+  .name {
+    font-size: 9.375vw;
+  }
+
+  .block {
+    margin-top: 9.375vw;
+  }
+
+  .block-title {
+    line-height: 3.434vw;
+    font-size: 2.93vw;
+    margin-bottom: 2.344vw;
+  }
+
+  .entry {
+    line-height: 8.24vw;
+    font-size: 7.031vw;
+    margin-bottom: 0;
+  }
+}
+
+/* Медиа query для десктопов, срабатывает при достижении 1440px  */
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 3.472vw;
+    padding-bottom: 8.333vw;
+  }
+
+  .name {
+    font-size: 10vw;
+    margin-bottom: 1.667vw;
+  }
+
+  .block {
+    margin-top: 8.333vw;
+  }
+
+  .block-title {
+    line-height: 3.906vw;
+    font-size: 3.333vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .entry {
+    line-height: 7.813vw;
+    font-size: 6.667vw;
+  }
+}
