@@ -18,6 +18,7 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/93469104" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Екатя</title>
@@ -25,8 +26,10 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/backgroundstyle.css" />
+    <!-- ВК Интеграция -->
     <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
-
+    <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+    <!-- ВК Интеграция -->
   </head>
 
   <body>
@@ -35,12 +38,36 @@
     <div id='stars2'></div>
     <div id='stars3'></div>
 
+      <!-- ВК - начало -->
     <script type="text/javascript">
           VK.init({
             apiId: ВАШ_API_ID,
             onlyWidgets: true
           });
     </script>
+       
+
+    <script
+      type="text/javascript"
+      src="https://vk.com/js/api/openapi.js?168"
+      charset="windows-1251"
+    ></script>
+    <script type="text/javascript">
+      VK.init({ apiId: 7794785, onlyWidgets: true });
+    </script>
+
+      <div id="vk_like"></div>
+    <script type="text/javascript">
+      VK.Widgets.Like("vk_like", {type: "mini", height: 22});
+    </script>
+    <script type="text/javascript">
+      VK.init({
+        apiId: ВАШ_API_ID,
+        onlyWidgets: true
+      });
+</script>
+
+        <!-- ВК - конец -->
 
     <button id="select" onclick="darkLight()" ></button>
     <div class="help-button">здесь ты можешь сменить тему</div>
@@ -54,6 +81,7 @@
       </h1>
       <h2>Я Qa-Engineer</h2>
     </div>
+
 
 
     <div class="block">
@@ -102,18 +130,21 @@
           <a href="https://github.com/Qa-tya" target="_blank">git
           </a>
         </div>
-        <div id="vk_like"></div>
+      </div>
+    </div>
+
+        <div id="vk_comments"></div>
+            <script type="text/javascript">
+              VK.Widgets.Comments('vk_comments', {width: 500, limit: 20});
+            </script>
+
+            <script type="text/javascript">
+              VK.init({ apiId: NaN, onlyWidgets: true });
+            </script>
 
 
     <script src="js/theme.js">
     </script>
-    
-    <script type="text/javascript">
-      VK.Widgets.Like('vk_like');
-    </script>
-    
-    
-     
-
+       
   </body>
 </html>

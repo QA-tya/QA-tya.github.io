@@ -104,6 +104,12 @@ body {
 
 }
 
+.block-entries
+{
+  margin-bottom: 10.667vw;
+
+}
+
 .link {
   max-width: 13vw;
   font-size: 6.667vw;
@@ -144,6 +150,12 @@ body {
   text-decoration-thickness: 0.2vw;
 }
 
+#vk_like {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+}
 
 h1 {
     font-family: "Bitter";
