@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/backgroundstyle.css" />
+    <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
 
   </head>
 
@@ -34,7 +35,13 @@
     <div id='stars2'></div>
     <div id='stars3'></div>
 
- 
+    <script type="text/javascript">
+          VK.init({
+            apiId: ВАШ_API_ID,
+            onlyWidgets: true
+          });
+    </script>
+
     <button id="select" onclick="darkLight()" ></button>
     <div class="help-button">здесь ты можешь сменить тему</div>
  
@@ -95,10 +102,15 @@
           <a href="https://github.com/Qa-tya" target="_blank">git
           </a>
         </div>
+        <div id="vk_like"></div>
 
 
-    <script src="js/theme.js"></script>
-  
+    <script src="js/theme.js">
+    </script>
+    
+    <script type="text/javascript">
+      VK.Widgets.Like('vk_like');
+    </script>
     
     
      
