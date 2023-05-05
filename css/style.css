@@ -82,6 +82,10 @@ body {
     filter: grayscale(0.3) sepia(0.5) hue-rotate(-10deg) saturate(2) brightness(120%) drop-shadow(5px -4px 10px  #ee899d);
 }
 
+.theme-light .comments {
+  background-image: url(img/arrow-light.png);
+  } 
+
 .block-title {
   color: rgba(240, 240, 240, 0.6);
   line-height: 5.208vw;
@@ -150,12 +154,19 @@ body {
   text-decoration-thickness: 0.2vw;
 }
 
-#vk_like {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 9999;
-}
+.comments {
+  font-size: 1.93vw;
+  padding-bottom: 3vw;
+  text-decoration: underline wavy;
+  text-underline-offset: 1vw;
+  text-decoration-thickness: 0.3vw;
+  background-image: url(img/arrow-dark.png);
+  background-repeat: no-repeat;
+  background-position-x: 18vw;
+  background-position-y: -0.6vw;
+  background-size: 5vw 5vw;
+  } 
+
 
 h1 {
     font-family: "Bitter";
