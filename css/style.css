@@ -166,6 +166,12 @@ body {
   background-position-y: -0.6vw;
   background-size: 5vw 5vw;
   } 
+.comments2{
+  font-size: 1.8vw;
+  transform: rotate(-15deg);
+  margin-left: 3vw ;
+  margin-top: 2vw;
+}
 
 
 h1 {
