@@ -53,6 +53,7 @@
     <script type="text/javascript">
       VK.Widgets.Like("vk_like", {type: "mini", height: 22});
     </script>
+    
                 <!-- /ВК Интеграция -->
 
     <div id='stars'></div>
@@ -122,6 +123,14 @@
         </div>
       </div>
     </div>
+    <div class="comments">
+      Здесь ты можешь написать что-нибудь
+    </div>
+    <div id="vk_comments"></div>
+    <script type="text/javascript">
+      VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*", width: 500});
+    </script>
+    
 
 
     <script src="js/theme.js">
