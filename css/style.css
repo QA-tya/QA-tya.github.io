@@ -154,25 +154,6 @@ body {
   text-decoration-thickness: 0.2vw;
 }
 
-.comments {
-  font-size: 1.93vw;
-  padding-bottom: 3vw;
-  text-decoration: underline wavy;
-  text-underline-offset: 1vw;
-  text-decoration-thickness: 0.3vw;
-  background-image: url(img/arrow-dark.png);
-  background-repeat: no-repeat;
-  background-position-x: 18vw;
-  background-position-y: -0.6vw;
-  background-size: 5vw 5vw;
-  } 
-.comments2{
-  font-size: 1.8vw;
-  transform: rotate(-15deg);
-  margin-left: 3vw ;
-  margin-top: 2vw;
-}
-
 
 h1 {
     font-family: "Bitter";
